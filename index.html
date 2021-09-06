@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preparation for exam</title>
+  </head>
+  <body>
+    <style type="text/css">
+      form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 20%;
+      }
+      input {
+        display: block;
+        margin-bottom: 20px;
+      }
+    </style>
+    <form action="" method="post" name="userform" id="userform">
+      <fieldset name="userFields">
+        <!-- wrapped form in rectangle -->
+        <legend>info</legend>
+        <label for="usertext">text</label>
+        <input type="text" name="usertext" id="usertext" />
+
+        <label for="usercheckbox">checkbox</label>
+        <input type="checkbox" name="usercheckbox" id="usercheckbox" />
+
+        <label for="userfile">file</label>
+        <input type="file" name="userfile" id="userfile" />
+
+        <label for="userhidden">hidden</label>
+        <input type="hidden" name="userhidden" id="userhidden" />
+
+        <label for="userimage">image</label>
+        <input
+          type="image"
+          src="./img/Без названия.jpeg"
+          name="userimage"
+          id="userimage"
+        />
+
+        <label for="userpassword">password</label>
+        <input type="password" name="userpassword" id="userpassword" />
+
+        <label for="userradio">radio</label>
+        <input type="radio" name="userradio" id="userradio" />
+
+        <input type="reset" />
+        <input type="submit" />
+        <input type="button" value="button" />
+      </fieldset>
+    </form>
+
+    <form name="selectform">
+      <select id="select">
+        <option value="apple">Яблоко</option>
+        <option value="pear">Груша</option>
+        <option value="banana">Банан</option>
+      </select>
+    </form>
+    <!-- <script src="./main.js"></script> -->
+    <!-- <script src="./forms.js"></script> -->
+    <script src="./prototype.js"></script>
+    <!-- <script src="./date.js"></script> -->
+  </body>
+</html>
