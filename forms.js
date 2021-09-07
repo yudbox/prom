@@ -21,12 +21,13 @@ let elem = form.elements.usercheckbox;
 // let form2 = document.getElementById("userform");
 // console.log("form2", form2);
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  console.log("e", e.target.userform);
+  console.log('e', e.target.userform);
 
-  const fomData = new FormData(e.target.fieldset);
+  const fomData = new FormData(form);
 
-  console.log("this", this);
-  console.log("fomData", fomData);
+  console.log('usertext', fomData.get('usertext'));
+  console.log('userpassword', fomData.get('userpassword'));
+  console.log('fomData', fomData);
 });
